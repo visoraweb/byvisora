@@ -1,12 +1,13 @@
 /* Visora — menu trois traits, actions de contact et pages par catégorie */
 (() => {
-  const C = {"tel":"+33650094348","email":"visora.webstudio@gmail.com","forms":"visora.webstudio@gmail.com","arrow":"<svg class=\"ic-arrow-r\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg>","links":[{"key":"home","href":"/","n":"01","label":"Accueil","sub":"L’expérience Visora"},{"key":"offres","href":"/offres/","n":"02","label":"Nos offres","sub":"5 offres · dès 100&nbsp;€"},{"key":"tarifs","href":"/tarifs/","n":"03","label":"Tarifs","sub":"Dès 49,99&nbsp;€ par mois"},{"key":"fonctionnement","href":"/fonctionnement/","n":"04","label":"Fonctionnement","sub":"Deux temps, zéro surprise"},{"key":"inclus","href":"/inclus/","n":"05","label":"Inclus partout","sub":"Sans supplément"},{"key":"questions","href":"/questions/","n":"06","label":"Questions","sub":"9 réponses claires"},{"key":"contact","href":"/contact/","n":"07","label":"Contact","sub":"Réponse sous 24&nbsp;h ouvrées"}],"actions":[{"k":"rdv","href":"/rendez-vous/","icon":"<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3.5\" y=\"5\" width=\"17\" height=\"15.5\" rx=\"2.5\"/><path d=\"M3.5 10h17M8 3v4M16 3v4\"/></svg>","label":"Réserver un appel","sub":"30 min · en visio · gratuit"},{"k":"devis","href":"/devis/","icon":"<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 3h8l4 4v14H6z\"/><path d=\"M14 3v4h4M9 12h6M9 15.5h6M9 19h3\"/></svg>","label":"Demander un devis","sub":"En deux minutes · PDF"},{"k":"ecrire","href":"/contact/#ecrire","icon":"<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m4 7 8 6 8-6\"/></svg>","label":"Nous écrire","sub":"Réponse sous 24 h ouvrées"},{"k":"appel","href":"tel:+33650094348","icon":"<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2\"/></svg>","label":"Appeler","sub":"06 50 09 43 48"}],"previews":{"home":"<p class=\"vm-k\">L’expérience</p><p>La page d’accueil en 3D, où votre futur site se construit sous vos yeux.</p><ul><li><a href=\"/\">Revenir à l’accueil <em>3D</em></a></li><li><a href=\"/a-propos/\">À propos de Visora <em>Studio</em></a></li></ul>","offres":"<p class=\"vm-k\">5 offres</p><ul><li><a href=\"/offres/site-vitrine/\">Site vitrine<em>Dès 300&nbsp;€</em></a></li><li><a href=\"/offres/landing-page/\">Landing page<em>Dès 200&nbsp;€</em></a></li><li><a href=\"/offres/application-web/\">Application web<em>Dès 1 900&nbsp;€</em></a></li><li><a href=\"/offres/saas-mvp/\">SaaS / MVP<em>Sur devis</em></a></li><li><a href=\"/offres/refonte-migration/\">Refonte & migration<em>Dès 100&nbsp;€</em></a></li></ul>","tarifs":"<p class=\"vm-k\">Formules avec abonnement</p><ul><li><a href=\"/tarifs/\">Essentiel<em>49,99&nbsp;€ / mois</em></a></li><li><a href=\"/tarifs/\">Pro<em>79,99&nbsp;€ / mois</em></a></li><li><a href=\"/tarifs/\">Sur mesure<em>Sur devis</em></a></li></ul><p style=\"margin-top:10px\">Facturé chaque mois, sans engagement.</p>","fonctionnement":"<p class=\"vm-k\">Deux temps</p><ul><li><span>Découverte<em>I</em></span></li><li><span>Design<em>II</em></span></li><li><span>Développement<em>III</em></span></li><li><span>Lancement<em>IV</em></span></li><li><span>Accompagnement<em>∞</em></span></li></ul>","inclus":"<p class=\"vm-k\">Dans chaque création</p><ul><li><span>Design sur mesure<em>Aucun template</em></span></li><li><span>Tous les écrans<em>Mobile, tablette, ordinateur</em></span></li><li><span>Référencement<em>Pensé pour Google</em></span></li><li><span>Performance<em>Des pages légères</em></span></li><li><span>Vous êtes propriétaire<em>Code, contenus et accès</em></span></li><li><span>Prise en main<em>Session incluse</em></span></li></ul>","questions":"<p class=\"vm-k\">On nous demande souvent</p><ul><li><a href=\"/questions/#q1\">Pourquoi des prix « à partir de » ?</a></li><li><a href=\"/questions/#q2\">Comment recevoir un devis ?</a></li><li><a href=\"/questions/#q3\">Combien de temps faut-il ?</a></li><li><a href=\"/questions/#q4\">Le site m’appartient-il ?</a></li></ul>","contact":"<p class=\"vm-k\">Coordonnées</p><ul><li><a href=\"tel:+33650094348\">Téléphone<em>06 50 09 43 48</em></a></li><li><a href=\"mailto:visora.webstudio@gmail.com\">E-mail<em>visora.webstudio@gmail.com</em></a></li><li><span>Disponibilité<em>du lundi au vendredi, hors jours fériés</em></span></li></ul>"},"anchors":{"offres":"/offres/","tarifs":"/tarifs/","fonctionnement":"/fonctionnement/","inclus":"/inclus/","faq":"/questions/","contact":"/contact/","offre-vitrine":"/offres/site-vitrine/","offre-landing":"/offres/landing-page/","offre-application":"/offres/application-web/","offre-saas":"/offres/saas-mvp/","offre-refonte":"/offres/refonte-migration/"},"dots":["#070707","#e2382c","#c9a58a"],"legal":[["/mentions-legales/","Mentions légales"],["/confidentialite/","Confidentialité"],["/cgv/","Conditions de vente"]]};
+  const C = {"tel":"+33650094348","email":"visora.webstudio@gmail.com","forms":"visora.webstudio@gmail.com","arrow":"<svg class=\"ic-arrow-r\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg>","links":[{"key":"home","href":"/","n":"01","label":"Accueil","sub":"L’expérience Visora"},{"key":"offres","href":"/offres/","n":"02","label":"Nos offres","sub":"5 offres · dès 100&nbsp;€"},{"key":"tarifs","href":"/tarifs/","n":"03","label":"Tarifs","sub":"Dès 49,99&nbsp;€ par mois"},{"key":"fonctionnement","href":"/fonctionnement/","n":"04","label":"Fonctionnement","sub":"Deux temps, zéro surprise"},{"key":"inclus","href":"/inclus/","n":"05","label":"Inclus partout","sub":"Sans supplément"},{"key":"questions","href":"/questions/","n":"06","label":"Questions","sub":"9 réponses claires"},{"key":"contact","href":"/contact/","n":"07","label":"Contact","sub":"Réponse sous 24&nbsp;h ouvrées"}],"actions":[{"k":"rdv","href":"/rendez-vous/","icon":"<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3.5\" y=\"5\" width=\"17\" height=\"15.5\" rx=\"2.5\"/><path d=\"M3.5 10h17M8 3v4M16 3v4\"/></svg>","label":"Réserver un appel","sub":"30 min · en visio · gratuit"},{"k":"devis","href":"/devis/","icon":"<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 3h8l4 4v14H6z\"/><path d=\"M14 3v4h4M9 12h6M9 15.5h6M9 19h3\"/></svg>","label":"Demander un devis","sub":"En deux minutes · PDF"},{"k":"ecrire","href":"/contact/#ecrire","icon":"<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m4 7 8 6 8-6\"/></svg>","label":"Nous écrire","sub":"Réponse sous 24 h ouvrées"},{"k":"appel","href":"tel:+33650094348","icon":"<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2\"/></svg>","label":"Appeler","sub":"06 50 09 43 48"}],"previews":{"home":"<p class=\"vm-k\">L’expérience</p><p>La page d’accueil en 3D, où votre futur site se construit sous vos yeux.</p><ul><li><a href=\"/\">Revenir à l’accueil <em>3D</em></a></li><li><a href=\"/a-propos/\">À propos de Visora <em>Studio</em></a></li></ul>","offres":"<p class=\"vm-k\">5 offres</p><ul><li><a href=\"/offres/site-vitrine/\">Site vitrine<em>Dès 300&nbsp;€</em></a></li><li><a href=\"/offres/landing-page/\">Landing page<em>Dès 200&nbsp;€</em></a></li><li><a href=\"/offres/application-web/\">Application web<em>Dès 1 900&nbsp;€</em></a></li><li><a href=\"/offres/saas-mvp/\">SaaS / MVP<em>Sur devis</em></a></li><li><a href=\"/offres/refonte-migration/\">Refonte & migration<em>Dès 100&nbsp;€</em></a></li></ul>","tarifs":"<p class=\"vm-k\">Formules avec abonnement</p><ul><li><a href=\"/tarifs/\">Essentiel<em>49,99&nbsp;€ / mois</em></a></li><li><a href=\"/tarifs/\">Pro<em>79,99&nbsp;€ / mois</em></a></li><li><a href=\"/tarifs/\">Sur mesure<em>Sur devis</em></a></li></ul><p style=\"margin-top:10px\">Facturé chaque mois, sans engagement.</p>","fonctionnement":"<p class=\"vm-k\">Deux temps</p><ul><li><span>Découverte<em>I</em></span></li><li><span>Design<em>II</em></span></li><li><span>Développement<em>III</em></span></li><li><span>Lancement<em>IV</em></span></li><li><span>Accompagnement<em>∞</em></span></li></ul>","inclus":"<p class=\"vm-k\">Dans chaque création</p><ul><li><span>Design sur mesure<em>Aucun template</em></span></li><li><span>Tous les écrans<em>Mobile, tablette, ordinateur</em></span></li><li><span>Référencement<em>Pensé pour Google</em></span></li><li><span>Performance<em>Des pages légères</em></span></li><li><span>Vous êtes propriétaire<em>Code, contenus et accès</em></span></li><li><span>Prise en main<em>Session incluse</em></span></li></ul>","questions":"<p class=\"vm-k\">On nous demande souvent</p><ul><li><a href=\"/questions/#q1\">Pourquoi des prix « à partir de » ?</a></li><li><a href=\"/questions/#q2\">Comment recevoir un devis ?</a></li><li><a href=\"/questions/#q3\">Combien de temps faut-il ?</a></li><li><a href=\"/questions/#q4\">Le site m’appartient-il ?</a></li></ul>","contact":"<p class=\"vm-k\">Coordonnées</p><ul><li><a href=\"tel:+33650094348\">Téléphone<em>06 50 09 43 48</em></a></li><li><a href=\"mailto:visora.webstudio@gmail.com\">E-mail<em>visora.webstudio@gmail.com</em></a></li><li><span>Disponibilité<em>du lundi au vendredi, hors jours fériés</em></span></li></ul>"},"anchors":{"inclus":"/inclus/","faq":"/questions/"},"incl":"<div class=\"wrap\"><p class=\"s-eyebrow\">(05) — Inclus partout</p><h2 class=\"s-h2 vx-title\" id=\"vx-title\">Dans chaque création, <em>sans supplément.</em></h2><p class=\"vp-lead vx-lead\">Quelle que soit l’offre choisie, ces 6 engagements font partie du travail, sans ligne cachée sur le devis.</p><ul class=\"s-incl-grid\"><li class=\"glass s-anim\"><div class=\"s-ill ill-design\"><svg viewBox=\"0 0 160 110\" aria-hidden=\"true\"><rect class=\"dim\" x=\"14\" y=\"12\" width=\"132\" height=\"86\" rx=\"8\"/><path class=\"dim\" d=\"M24 24h18M24 31h10\"/><path class=\"b draw\" pathLength=\"1\" d=\"M28 76C46 34 66 30 78 54s30 30 54-24\"/><circle class=\"f dot d1\" cx=\"28\" cy=\"76\" r=\"3.4\"/><circle class=\"f dot d2\" cx=\"78\" cy=\"54\" r=\"3.4\"/><circle class=\"f dot d3\" cx=\"132\" cy=\"30\" r=\"3.4\"/></svg></div><h3>Design sur mesure</h3><p>Aucun template</p></li><li class=\"glass s-anim\"><div class=\"s-ill ill-screens\"><svg viewBox=\"0 0 160 110\" aria-hidden=\"true\"><g class=\"dev\" style=\"--d:0s\"><rect x=\"62\" y=\"20\" width=\"36\" height=\"70\" rx=\"8\"/><path class=\"b\" d=\"M70 36h20M70 44h14M70 52h18\"/><path d=\"M75 83h10\"/></g><g class=\"dev\" style=\"--d:2s\"><rect x=\"44\" y=\"16\" width=\"72\" height=\"80\" rx=\"8\"/><path class=\"b\" d=\"M54 30h34M54 38h22\"/><rect class=\"dim\" x=\"54\" y=\"48\" width=\"52\" height=\"30\" rx=\"3\"/></g><g class=\"dev\" style=\"--d:4s\"><rect x=\"30\" y=\"18\" width=\"100\" height=\"62\" rx=\"5\"/><path d=\"M18 86h124l-8 6H26z\"/><path class=\"b\" d=\"M42 32h40M42 40h26\"/><rect class=\"dim\" x=\"92\" y=\"30\" width=\"28\" height=\"36\" rx=\"3\"/></g></svg></div><h3>Tous les écrans</h3><p>Mobile, tablette, ordinateur</p></li><li class=\"glass s-anim\"><div class=\"s-ill ill-seo\"><svg viewBox=\"0 0 160 110\" aria-hidden=\"true\"><rect x=\"18\" y=\"10\" width=\"124\" height=\"22\" rx=\"11\"/><circle cx=\"32\" cy=\"21\" r=\"5\"/><path d=\"M35.6 24.6 40 29\"/><path class=\"b type\" pathLength=\"1\" d=\"M48 21h56\"/><g class=\"r1\"><rect class=\"dim\" x=\"18\" y=\"42\" width=\"124\" height=\"16\" rx=\"5\"/><path class=\"dim\" d=\"M28 50h50\"/></g><g class=\"r2\"><rect class=\"dim\" x=\"18\" y=\"64\" width=\"124\" height=\"16\" rx=\"5\"/><path class=\"dim\" d=\"M28 72h40\"/></g><g class=\"r3\"><rect class=\"b\" x=\"18\" y=\"86\" width=\"124\" height=\"16\" rx=\"5\"/><path class=\"b\" d=\"M28 94h58\"/><circle class=\"f\" cx=\"128\" cy=\"94\" r=\"3\"/></g></svg></div><h3>Référencement</h3><p>Pensé pour Google</p></li><li class=\"glass s-anim\"><div class=\"s-ill ill-perf\"><svg viewBox=\"0 0 160 110\" aria-hidden=\"true\"><path class=\"track\" d=\"M30 88a50 50 0 0 1 100 0\"/><path class=\"b gauge\" pathLength=\"1\" d=\"M30 88a50 50 0 0 1 100 0\"/><path class=\"dim\" d=\"M37 63l6 3.5M80 34v7M123 63l-6 3.5\"/><g class=\"needle\"><path d=\"M80 88V52\"/><circle class=\"f\" cx=\"80\" cy=\"88\" r=\"4.5\"/></g></svg></div><h3>Performance</h3><p>Des pages légères</p></li><li class=\"glass s-anim\"><div class=\"s-ill ill-owner\"><svg viewBox=\"0 0 160 110\" aria-hidden=\"true\"><path class=\"shackle\" d=\"M66 52V40a14 14 0 0 1 28 0v12\"/><rect class=\"glow\" x=\"54\" y=\"52\" width=\"52\" height=\"42\" rx=\"7\"/><rect x=\"54\" y=\"52\" width=\"52\" height=\"42\" rx=\"7\"/><circle class=\"b\" cx=\"80\" cy=\"70\" r=\"4.5\"/><path class=\"b\" d=\"M80 74.5V82\"/><path class=\"b spark\" d=\"M114 36l6-6M120 48h8M46 36l-6-6M40 48h-8\"/></svg></div><h3>Vous êtes propriétaire</h3><p>Code, contenus et accès</p></li><li class=\"glass s-anim\"><div class=\"s-ill ill-help\"><svg viewBox=\"0 0 160 110\" aria-hidden=\"true\"><rect class=\"dim\" x=\"44\" y=\"34\" width=\"72\" height=\"34\" rx=\"17\"/><rect class=\"b on\" x=\"44\" y=\"34\" width=\"72\" height=\"34\" rx=\"17\"/><circle class=\"knob\" cx=\"61\" cy=\"51\" r=\"12\"/><path class=\"cur\" d=\"M100 58v24l6.5-6.2 4.6 10.4 4.6-2-4.6-10.3 9-.4z\"/></svg></div><h3>Prise en main</h3><p>Session incluse</p></li></ul><div class=\"vp-row vx-foot\"><a class=\"vp-btn vp-btn--solid\" href=\"/devis/\" data-vm-act=\"devis\">Demander un devis <svg class=\"ic-arrow-r\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></a><button type=\"button\" class=\"vp-btn vp-btn--ghost\" data-vx-close>Revenir aux tarifs</button></div></div>","dots":["#070707","#e2382c","#c9a58a"],"legal":[["/mentions-legales/","Mentions légales"],["/confidentialite/","Confidentialité"],["/cgv/","Conditions de vente"]]};
   const d = document, html = d.documentElement;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const onHome = !!d.getElementById('app');
   const direct = html.dataset.vpDirect || '';
   const here = location.pathname.replace(/index\.html$/, '') || '/';
   let panel = null, isOpen = false, lastFocus = null, timer = 0;
+  let incl = null, inclOpen = false, inclTimer = 0, inclFocus = null;
 
   /* ---------------- menu ---------------- */
   function build() {
@@ -147,6 +148,7 @@
       e.preventDefault();
       const kind = a.dataset.vmAct;
       const data = { type: a.dataset.type || '', plan: a.dataset.plan || '', saas: a.dataset.saas || '' };
+      if (inclOpen) { closeIncl(() => act(kind, data)); return; }
       isOpen ? closeMenu(() => act(kind, data), kind === 'appel') : act(kind, data);
       return;
     }
@@ -180,6 +182,70 @@
     }
   });
   addEventListener('resize', () => { if (isOpen) measure(); });
+
+  /* ---------------- comparaison des formules : une formule à la fois sur téléphone ---------------- */
+  d.addEventListener('click', (e) => {
+    const tab = e.target.closest('.vc-tab');
+    if (!tab) return;
+    const box = tab.closest('.vc');
+    box.dataset.show = tab.dataset.vc;
+    box.querySelectorAll('.vc-tab').forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
+  });
+
+  /* ---------------- Inclus partout : une page qui se déroule depuis les tarifs ---------------- */
+  function buildIncl() {
+    if (incl) return incl;
+    incl = d.createElement('div');
+    incl.className = 'vx-panel';
+    incl.setAttribute('role', 'dialog');
+    incl.setAttribute('aria-modal', 'true');
+    incl.setAttribute('aria-labelledby', 'vx-title');
+    incl.innerHTML = `<div class="vx-curtain" aria-hidden="true"></div><button type="button" class="vx-close" data-vx-close aria-label="Fermer"><span class="vm-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="vx-close-t" aria-hidden="true">Fermer</span></button><div class="vx-scroll">${C.incl}</div>`;
+    d.body.appendChild(incl);
+    return incl;
+  }
+  function openIncl() {
+    if (inclOpen) return;
+    buildIncl();
+    clearTimeout(inclTimer);
+    inclFocus = d.activeElement;
+    inclOpen = true;
+    incl.classList.remove('is-closing');
+    html.classList.add('vx-open');
+    incl.querySelector('.vx-scroll').scrollTop = 0;
+    void incl.offsetWidth;
+    incl.classList.add('is-open');
+    const cards = [...incl.querySelectorAll('.s-anim')];
+    cards.forEach((li) => li.classList.remove('is-on', 'is-drawn'));
+    cards.forEach((li, i) => setTimeout(() => { if (inclOpen) li.classList.add('is-on', 'is-drawn'); }, reduce ? 0 : 560 + i * 90));
+    inclTimer = setTimeout(() => incl.querySelector('.vx-close').focus({ preventScroll: true }), reduce ? 20 : 450);
+  }
+  function closeIncl(then) {
+    if (!inclOpen) { then?.(); return; }
+    inclOpen = false;
+    clearTimeout(inclTimer);
+    incl.classList.remove('is-open');
+    incl.classList.add('is-closing');
+    if (then) setTimeout(then, reduce ? 0 : 520);
+    inclTimer = setTimeout(() => {
+      incl.classList.remove('is-closing');
+      html.classList.remove('vx-open');
+      if (!then) inclFocus?.focus?.({ preventScroll: true });
+    }, reduce ? 150 : 1050);
+  }
+  d.addEventListener('click', (e) => {
+    if (e.target.closest('[data-vp-incl]')) { e.preventDefault(); openIncl(); return; }
+    if (e.target.closest('[data-vx-close]')) { e.preventDefault(); closeIncl(); }
+  });
+  d.addEventListener('keydown', (e) => {
+    if (!inclOpen) return;
+    if (e.key === 'Escape') { e.preventDefault(); closeIncl(); return; }
+    if (e.key !== 'Tab') return;
+    const f = [...incl.querySelectorAll('a[href], button')];
+    const i = f.indexOf(d.activeElement);
+    if (e.shiftKey && i <= 0) { e.preventDefault(); f[f.length - 1].focus(); }
+    else if (!e.shiftKey && i === f.length - 1) { e.preventDefault(); f[0].focus(); }
+  });
 
   /* ---------------- accueil : liens profonds et anciennes ancres ---------------- */
   if (onHome) {
