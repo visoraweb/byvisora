@@ -81,8 +81,8 @@ input,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-ra
 @media(max-width:640px){.stack thead{display:none}.stack table,.stack tbody,.stack tr,.stack th,.stack td{display:block;width:100%}.stack tr{padding:12px 16px;border-top:1px solid var(--line)}.stack tr:first-child{border-top:0}.stack th,.stack td{padding:2px 0;border:0}.stack td::before{content:attr(data-l) ' : ';color:var(--muted);font-size:13.5px}}
 @media print{.top,.side,.foot,.noprint,.skip{display:none!important}:root,html[data-theme]{--bg:#fff;--paper:#fff;--ink:#000;--muted:#333;--line:#bbb;--accent:#000;color-scheme:light}.shell{display:block;padding:0}}</style>
 <script>try{if(sessionStorage.getItem('vm-nav')){document.documentElement.classList.add('vp-enter');sessionStorage.removeItem('vm-nav')}}catch(e){}</script>
-<link rel="stylesheet" href="/assets/visora-site-691d6efc.css">
-<script defer src="/assets/visora-site-691d6efc.js"></script>
+<link rel="stylesheet" href="/assets/visora-site-b6ad484f.css">
+<script defer src="/assets/visora-site-b6ad484f.js"></script>
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
@@ -93,7 +93,7 @@ input,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-ra
 <p class="kick">Informations</p>
 <h1>Résilier votre contrat</h1>
 <p class="upd">Mise à jour le 25 novembre 2026</p>
-<p class="lead">Sans compte, sans motif et sans frais. Avec le préavis d’un mois, votre abonnement prend fin le dernier jour du mois qui suit votre demande : une demande faite le 10 mars prend effet le 30 avril. Vous pouvez aussi choisir une date plus tardive.</p>
+<p class="lead">Sans compte, sans motif et sans frais. Avec le préavis d’un mois, votre abonnement prend fin le dernier jour du mois qui suit votre demande : une demande faite le 10 mars prend effet le 30 avril. Vous pouvez aussi choisir une date plus tardive. Devis signé avant le 25 novembre 2026 : pas de préavis.</p>
 
 <section id="rs-1">
 <h2>Votre contrat</h2>
@@ -103,6 +103,7 @@ input,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-ra
 <label>Référence du contrat *<small>Numéro de devis ou de facture, ou adresse de votre site</small><input name="ref" required><span class="err" data-err="ref" role="alert"></span></label>
 <label>Formule<select name="formule"><option value="">Je ne sais pas</option><option>Essentiel</option><option>Pro</option><option>Sur mesure</option></select></label>
 <label>Date de fin souhaitée<small id="rs-hint">Laissez vide pour arrêter au plus tôt, à la fin du préavis d’un mois</small><input id="rs-date" name="date" type="date"></label>
+<label class="rs-old"><input type="checkbox" id="rs-old" name="ancien"><span>Mon devis a été signé avant le 25 novembre 2026<small>Pas de préavis : l’abonnement s’arrête le dernier jour du mois de votre demande.</small></span></label>
 <label class="hp" aria-hidden="true">Ne pas remplir<input name="_honey" tabindex="-1" autocomplete="off"></label>
 <p class="note">Ces informations servent uniquement à exécuter votre résiliation. Elles nous parviennent par e-mail via FormSubmit et sont conservées 5 ans après la fin du contrat. <a href="/confidentialite/">Vos droits et le détail</a>.</p>
 <div class="row"><button class="act" type="submit"><span>Résilier votre contrat</span></button></div>
@@ -138,16 +139,16 @@ var day=new Intl.DateTimeFormat('fr-FR',{day:'numeric',month:'long',year:'numeri
 function pad(n){return String(n).padStart(2,'0')}
 function today(){var t=new Date();return new Date(t.getFullYear(),t.getMonth(),t.getDate())}
 function local(v){var p=v.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
-function endOf(v){var t=today(),e=new Date(t.getFullYear(),t.getMonth()+2,0);if(v){var w=local(v),f=new Date(w.getFullYear(),w.getMonth()+1,0);if(f>e)e=f}return e}
-function endText(v){var e=day.format(endOf(v));return HOLD?e+', ou à la fin de votre période d’engagement si elle est plus tardive':e}
+function endOf(v,o){var t=today(),e=new Date(t.getFullYear(),t.getMonth()+(o?1:2),0);if(v){var w=local(v),f=new Date(w.getFullYear(),w.getMonth()+1,0);if(f>e)e=f}return e}
+function endText(v,o){var e=day.format(endOf(v,o));return HOLD?e+', ou à la fin de votre période d’engagement si elle est plus tardive':e}
 function show(i){steps.forEach(function(s,k){s.hidden=k!==i});var h=steps[i].querySelector('h2');h.setAttribute('tabindex','-1');h.focus({preventScroll:true});window.scrollTo({top:Math.max(0,steps[i].getBoundingClientRect().top+scrollY-100)})}
-function read(){var f=new FormData(form),g=function(k){return String(f.get(k)||'').trim()};return{nom:g('nom'),email:g('email'),ref:g('ref'),formule:g('formule'),date:g('date'),hp:g('_honey')}}
+function read(){var f=new FormData(form),g=function(k){return String(f.get(k)||'').trim()};return{nom:g('nom'),email:g('email'),ref:g('ref'),formule:g('formule'),date:g('date'),old:f.get('ancien')==='on',hp:g('_honey')}}
 function err(n,m){var p=form.querySelector('[data-err="'+n+'"]');if(p)p.textContent=m}
-function rows(v){return[['Nom ou raison sociale',v.nom],['E-mail',v.email],['Contrat',v.ref],['Formule',v.formule||'Non précisée'],['Fin demandée',v.date?day.format(local(v.date)):'Au plus tôt'],['Fin de l’abonnement',endText(v.date)]]}
+function rows(v){return[['Nom ou raison sociale',v.nom],['E-mail',v.email],['Contrat',v.ref],['Formule',v.formule||'Non précisée'],['Fin demandée',v.date?day.format(local(v.date)):'Au plus tôt'],['Préavis',v.old?'Aucun, devis signé avant le 25 novembre 2026':'Un mois'],['Fin de l’abonnement',endText(v.date,v.old)]]}
 function fill(dl,list){dl.textContent='';list.forEach(function(r){var t=document.createElement('dt'),d=document.createElement('dd');t.textContent=r[0];d.textContent=r[1];dl.append(t,d)})}
-function effects(v){return'Préavis d’un mois : vos services continuent et restent facturés jusqu’au '+endText(v.date)+'. Aucune facture n’est émise pour la période suivante. Pendant 30 jours après cette date, vous pouvez demander, sans frais, une copie de votre site et le transfert de votre nom de domaine.'}
+function effects(v){return(v.old?'Devis signé avant le 25 novembre 2026, sans préavis : vos':'Préavis d’un mois : vos')+' services continuent et restent facturés jusqu’au '+endText(v.date,v.old)+'. Aucune facture n’est émise pour la période suivante. Pendant 30 jours après cette date, vous pouvez demander, sans frais, une copie de votre site et le transfert de votre nom de domaine.'}
 function receipt(v,r){return['VISORA - Récépissé de résiliation','','Référence : '+r.ref,'Notifiée le : '+r.at].concat(rows(v).map(function(x){return x[0]+' : '+x[1]})).concat(['','Effets : '+effects(v),'','Contact : '+MAIL]).join('\r\n')}
-var first=endOf('');$('#rs-date').min=first.getFullYear()+'-'+pad(first.getMonth()+1)+'-'+pad(first.getDate());$('#rs-hint').textContent='Laissez vide pour arrêter au plus tôt, le '+day.format(first)+' (préavis d’un mois)';
+function hint(){var o=$('#rs-old').checked,first=endOf('',o),m=o?today():first;$('#rs-date').min=m.getFullYear()+'-'+pad(m.getMonth()+1)+'-'+pad(m.getDate());$('#rs-hint').textContent='Laissez vide pour arrêter au plus tôt, le '+day.format(first)+(o?' (sans préavis)':' (préavis d’un mois)')}hint();$('#rs-old').addEventListener('change',hint);
 form.addEventListener('input',function(e){if(e.target.name)err(e.target.name,'')});
 form.addEventListener('submit',function(e){e.preventDefault();var v=read(),bad=[];
 if(v.nom.length<2)bad.push(['nom','Indiquez votre nom ou votre raison sociale.']);
