@@ -154,23 +154,40 @@ html.vp-enter body::before { content: ""; position: fixed; inset: 0; z-index: 20
 .vc-chip { display: inline-flex; align-items: center; min-height: 28px; padding: 0 11px; border: 1px solid color-mix(in srgb, var(--accent) 60%, transparent); border-radius: 99px; color: var(--accent); font: 600 12px/1 var(--font-mono); letter-spacing: .06em; }
 .vc-txt { display: inline-block; max-width: 210px; color: var(--fg); font-size: 13.5px; line-height: 1.4; }
 .vc .s-compare-note { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.vc-txt .vc-short { display: none; }
 @media (max-width: 760px) {
-  .vc { padding: 0; border: 0; background: none; box-shadow: none; }
+  /* téléphone : les trois formules restent visibles côte à côte. Leurs noms et leurs prix restent collés
+     en haut pendant qu'on descend ; chaque ligne a son intitulé sur toute la largeur, puis une case par
+     formule */
+  .vc { padding: 0; border: 0; background: none; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
   .vc::before, .vc::after { content: none; }
-  .vc-tabs { display: flex; width: 100%; position: sticky; top: -1px; z-index: 4; margin-bottom: 6px; background: color-mix(in srgb, var(--bg, #0b0b0a) 92%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 12px 26px -16px #000; }
-  .vc-t { min-width: 0; }
-  .vc-t, .vc-t tbody { display: block; }
-  .vc-t thead { display: none; }
-  .vc[data-show="0"] [data-col]:not([data-col="0"]), .vc[data-show="1"] [data-col]:not([data-col="1"]), .vc[data-show="2"] [data-col]:not([data-col="2"]) { display: none; }
-  .vc-t tr { display: flex; flex-wrap: wrap; align-items: center; column-gap: 14px; border-bottom: 1px solid var(--line); }
-  .vc-t tr.vc-g { display: block; border-bottom: 0; }
-  .vc-t tr > * { border-bottom: 0; }
-  .vc-t .vc-g th { display: block; padding-top: 22px; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
-  .vc-t .vc-k { flex: 1 1 0; min-width: 0; width: auto; padding: 13px 0; font-size: 14px; }
-  .vc-t td { flex: 0 0 auto; padding: 13px 0; text-align: right; background: none !important; }
-  .vc-t td:has(> .vc-txt) { flex: 1 0 100%; padding: 0 0 14px; text-align: left; }
-  .vc[data-show="0"] tr:has(> td[data-col="0"] > .vc-txt) .vc-k, .vc[data-show="1"] tr:has(> td[data-col="1"] > .vc-txt) .vc-k, .vc[data-show="2"] tr:has(> td[data-col="2"] > .vc-txt) .vc-k { flex-basis: 100%; padding-bottom: 5px; }
-  .vc-txt { max-width: none; color: color-mix(in srgb, var(--accent) 82%, var(--fg)); font-size: 13.5px; }
+  .vc-tabs { display: none; }
+  .vc-scroll { overflow: visible; }
+  .vc-t { display: block; min-width: 0; font-size: 13.5px; }
+  .vc-t thead, .vc-t tbody { display: block; }
+  .vc-t tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 6px; align-items: center; }
+  .vc-t th, .vc-t td { padding: 0; border: 0; }
+  .vc-t thead { position: sticky; top: -14px; z-index: 3; padding: 22px 0 10px; background: color-mix(in srgb, var(--bg, #0b0b0a) 94%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .vc-t thead .vc-k { display: none; }
+  .vc-t thead th.vc-h { padding: 10px 4px 9px; border-radius: 14px; text-align: center; }
+  .vc-h b { font-size: 19px; }
+  .vc-h small { margin-top: 5px; font-size: 9.5px; letter-spacing: .06em; }
+  .vc-h em { display: none; }
+  .vc-t thead .is-featured { background: color-mix(in srgb, var(--accent) 14%, transparent); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent); }
+  .vc-t thead .is-featured b { color: var(--accent); }
+  .vc-t tbody tr:not(.vc-g) { row-gap: 8px; padding: 12px 0 10px; border-bottom: 1px solid var(--line); }
+  .vc-t tbody tr:not(.vc-g):hover > * { background-color: transparent; }
+  .vc-t tbody .vc-k { grid-column: 1 / -1; width: auto; padding: 0 2px; font-size: 13.5px; line-height: 1.4; }
+  .vc-t td { display: grid; place-items: center; min-height: 36px; padding: 4px; border-radius: 10px; text-align: center; }
+  .vc-t tbody td.is-featured, .vc-t tbody tr:not(.vc-g):hover > td.is-featured { background: color-mix(in srgb, var(--accent) 9%, transparent); }
+  .vc-t tbody:last-child tr:last-child .is-featured { border-radius: 10px; }
+  .vc-t tr.vc-g { display: block; }
+  .vc-t .vc-g th { display: block; padding: 24px 2px 10px; font-size: 10.5px; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+  .vc-txt { max-width: none; color: var(--fg); font-size: 12px; line-height: 1.3; }
+  .vc-txt .vc-long { display: none; }
+  .vc-txt .vc-short { display: inline; }
+  .vc-i { width: 26px; height: 26px; }
+  .vc .s-compare-note { margin-top: 18px; font-size: 12px; }
 }
 
 /* ---------- panneaux qui se déroulent (Inclus partout, Questions, Comparatif) ---------- */
