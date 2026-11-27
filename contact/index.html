@@ -3,53 +3,114 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contact | Visora</title>
-<meta name="description" content="Réserver un appel, demander un devis, écrire ou appeler Visora au 06 50 09 43 48. Réponse sous 24 h ouvrées.">
-<meta name="theme-color" content="#050505">
+<title>Nous contacter | Visora</title>
+<meta name="description" content="Téléphone, e-mail et adresse de Visora, studio de création de sites web.">
 <link rel="canonical" href="https://byvisora.fr/contact/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Visora">
-<meta property="og:title" content="Contact | Visora">
-<meta property="og:description" content="Réserver un appel, demander un devis, écrire ou appeler Visora au 06 50 09 43 48. Réponse sous 24 h ouvrées.">
-<meta property="og:url" content="https://byvisora.fr/contact/">
 <link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem('visora.theme');if(['signature','creatif','organique'].indexOf(t)>-1)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>:root{--bg:#f3ede2;--paper:#fffaf1;--ink:#191714;--muted:#5f584d;--line:rgba(25,23,20,.16);--accent:#8a6424;--on:#fff;--bad:#b3261e}
+html[data-theme=signature]{--bg:#070707;--paper:#141210;--ink:#f2eee6;--muted:#bab4a9;--line:rgba(242,238,230,.17);--accent:#d8b36b;--on:#14110b;--bad:#ff9d94;color-scheme:dark}
+html[data-theme=creatif]{--bg:#f3ede2;--paper:#fffaf1;--ink:#121a33;--muted:#4c5266;--line:rgba(18,26,51,.17);--accent:#c9231a;--on:#fff}
+html[data-theme=organique]{--bg:#efe7da;--paper:#f8f3ea;--ink:#2b3326;--muted:#555d4c;--line:rgba(43,51,38,.17);--accent:#964b2e;--on:#fff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:92px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.68 system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip{position:absolute;left:12px;top:-60px;z-index:9;padding:10px 14px;border-radius:8px;background:var(--ink);color:var(--bg)}
+.skip:focus{top:10px}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(16px,4vw,40px);background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{font:400 23px/1 Georgia,'Times New Roman',serif;letter-spacing:.2em;color:var(--ink);text-decoration:none}
+.back{font-size:14.5px;font-weight:600;white-space:nowrap}
+.shell{display:grid;grid-template-columns:240px minmax(0,760px);gap:56px;justify-content:center;padding:44px clamp(16px,4vw,40px) 80px}
+.side{position:sticky;top:92px;align-self:start;display:flex;flex-direction:column;gap:2px;font-size:14.5px}
+.side a{padding:7px 12px;border-radius:8px;color:var(--muted);text-decoration:none}
+.side a:hover{color:var(--ink);background:var(--line)}
+.side a[aria-current]{color:var(--ink);font-weight:600;background:var(--paper);box-shadow:inset 3px 0 0 var(--accent)}
+.side hr{width:100%;margin:8px 0;border:0;border-top:1px solid var(--line)}
+.kick{margin:0;font:600 12px/1 ui-monospace,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{margin:12px 0 10px;font:400 clamp(34px,5vw,54px)/1.08 Georgia,'Times New Roman',serif;letter-spacing:-.01em;overflow-wrap:anywhere}
+.upd{margin:0 0 24px;font-size:14px;color:var(--muted)}
+.lead{margin:0 0 28px;font-size:clamp(18px,2vw,20px);line-height:1.5}
+h2{margin:44px 0 12px;font:400 clamp(23px,2.6vw,28px)/1.2 Georgia,'Times New Roman',serif}
+h2:focus{outline:0}
+h3{margin:24px 0 6px;font-size:17px}
+p,ul,ol{margin:0 0 14px}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+small{color:var(--muted);font-weight:400}
+code{font:500 14px ui-monospace,Consolas,monospace}
+mark{padding:1px 7px;border-radius:5px;background:#ffe39a;color:#3a2a00;font-size:.92em;font-weight:600}
+.warn{margin:0 0 28px;padding:14px 18px;border-radius:12px;background:#ffe39a;color:#3a2a00;font-size:15px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.toc a{padding:5px 13px;border:1px solid var(--line);border-radius:99px;background:var(--paper);font-size:14px;text-decoration:none}
+dl{display:grid;grid-template-columns:minmax(150px,230px) minmax(0,1fr);margin:0 0 18px;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+dt,dd{margin:0;padding:11px 16px;border-top:1px solid var(--line)}
+dt{color:var(--muted);font-size:14.5px}
+dd{font-weight:500;overflow-wrap:anywhere}
+dl>:nth-child(-n+2){border-top:0}
+.tbl{margin:0 0 18px;overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+th,td{padding:11px 14px;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+tbody th{font-weight:600}
+thead th{border-top:0;color:var(--muted);font-size:13px;font-weight:600}
+details{margin:0 0 14px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+summary{cursor:pointer;font-weight:600}
+details p:first-of-type{margin-top:10px}
+form{display:grid;gap:16px}
+label{display:grid;gap:5px;font-size:14.5px;font-weight:600}
+label small{font-size:13.5px}
+input,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);font:inherit;font-weight:400}
+.err{min-height:0;color:var(--bad);font-size:13.5px;font-weight:500}
+.err:empty{display:none}
+.hp{position:absolute;left:-9999px}
+#rs-form .rs-old{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;cursor:pointer;line-height:1.45;transition:border-color .25s}
+#rs-form .rs-old input{flex:none;width:20px;height:20px;margin:1px 0 0;padding:0;border:0;accent-color:var(--accent);cursor:pointer}
+#rs-form .rs-old span{display:grid;gap:4px}
+#rs-form .rs-old:has(input:checked){border-color:var(--accent)}
+.note{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
+.bad{padding:12px 16px;border-radius:10px;border:1px solid var(--bad);color:var(--bad);font-size:15px}
+.bad a{color:inherit;font-weight:600}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.act,.ghost{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:11px 22px;border:1px solid var(--ink);border-radius:99px;font:600 15px/1.2 inherit;font-family:inherit;text-decoration:none;cursor:pointer}
+.act{background:var(--ink);color:var(--bg)}
+.ghost{background:transparent;color:var(--ink)}
+.act:hover,.ghost:hover{opacity:.86}
+.act:disabled{opacity:.6;cursor:wait}
+.foot{padding:30px clamp(16px,4vw,40px) 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.foot nav{display:flex;flex-wrap:wrap;gap:4px 18px;margin-bottom:10px}
+.foot a{color:inherit}
+@media(max-width:960px){.shell{grid-template-columns:minmax(0,1fr);gap:26px;padding-top:22px}.side{position:static;flex-direction:row;gap:4px;margin:0 calc(-1*clamp(16px,4vw,40px));padding:0 clamp(16px,4vw,40px) 6px;overflow-x:auto;scrollbar-width:none}.side a{flex:none;white-space:nowrap}.side a[aria-current]{box-shadow:inset 0 -2px 0 var(--accent)}.side hr{display:none}}
+@media(max-width:560px){dl{grid-template-columns:minmax(0,1fr)}dt{padding-bottom:0}dd{padding-top:2px;border-top:0}dl>:nth-child(2){border-top:0}.row>*{flex:1 1 100%}.back{font-size:13.5px}}
+@media(max-width:640px){.stack thead{display:none}.stack table,.stack tbody,.stack tr,.stack th,.stack td{display:block;width:100%}.stack tr{padding:12px 16px;border-top:1px solid var(--line)}.stack tr:first-child{border-top:0}.stack th,.stack td{padding:2px 0;border:0}.stack td::before{content:attr(data-l) ' : ';color:var(--muted);font-size:13.5px}}
+@media print{.top,.side,.foot,.noprint,.skip{display:none!important}:root,html[data-theme]{--bg:#fff;--paper:#fff;--ink:#000;--muted:#333;--line:#bbb;--accent:#000;color-scheme:light}.shell{display:block;padding:0}}</style>
 <script>try{if(sessionStorage.getItem('vm-nav')){document.documentElement.classList.add('vp-enter');sessionStorage.removeItem('vm-nav')}}catch(e){}</script>
-<link rel="stylesheet" href="/assets/index-By0cC6Xg.css">
-<link rel="stylesheet" href="/assets/visora-site-b6ad484f.css">
-<script defer src="/assets/visora-site-b6ad484f.js"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://byvisora.fr/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://byvisora.fr/contact/"}]}</script>
+<link rel="stylesheet" href="/assets/visora-menu-BJSooIJF.css">
+<script defer src="/assets/visora-menu-5Ggohnlm.js"></script>
 </head>
-<body class="vp-page">
-<a class="skip-link" href="#contenu">Aller au contenu</a>
-<div class="s-bg" aria-hidden="true"><i class="g1"></i><i class="g2"></i><i class="g3"></i></div>
-<header class="vp-head"><div class="vp-start"><button class="vm-burger" type="button" aria-expanded="false" aria-controls="vm-panel" aria-label="Ouvrir le menu"><span class="vm-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="vm-label" aria-hidden="true"><span>Menu</span><span>Fermer</span></span></button><a class="vp-logo" href="/" aria-label="Visora, accueil"><span class="vp-logo-mark" aria-hidden="true"></span></a></div><a class="vp-cta" href="/rendez-vous/" data-vm-act="rdv">Réserver un appel</a></header>
-<main id="contenu" class="vp-main s-live" tabindex="-1">
-<header class="vp-hero wrap"><ol class="vp-crumbs" aria-label="Fil d’Ariane"><li><a href="/">Accueil</a></li><li><span aria-current="page">Contact</span></li></ol><p class="s-eyebrow">(07) — Contact</p><h1>Parlons de <em>votre projet.</em></h1><p class="vp-lead">Un appel, un devis ou un message : choisissez ce qui vous convient. Nous répondons sous 24 h ouvrées, du lundi au vendredi.</p></header><section class="wrap vp-sec" aria-label="Comment nous joindre"><ul class="vp-reach"><li><a class="glass" href="/rendez-vous/" data-vm-act="rdv"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></i><span><b>Réserver un appel</b><small>30 min · en visio · gratuit</small></span><svg class="ic-arrow-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li><li><a class="glass" href="/devis/" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15.5h6M9 19h3"/></svg></i><span><b>Demander un devis</b><small>En deux minutes · PDF · s’ouvre dans un nouvel onglet</small></span><svg class="ic-arrow-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li><li><a class="glass" href="/contact/#ecrire" data-vm-act="ecrire"><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></i><span><b>Nous écrire</b><small>Réponse sous 24 h ouvrées</small></span><svg class="ic-arrow-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li><li><a class="glass" href="tel:+33650094348" data-vm-act="appel"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></i><span><b>Appeler</b><small>06 50 09 43 48</small></span><svg class="ic-arrow-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li></ul></section><section class="wrap vp-sec"><div class="vp-contact" id="ecrire">
-    <div class="vp-form-wrap glass"><p class="s-eyebrow">Nous écrire</p><h2 class="vp-h2">Décrivez <em>votre projet.</em></h2>
-      <form class="vp-form" novalidate>
-        <div class="vp-two"><label class="vp-field"><span>Prénom et nom</span><input name="nom" autocomplete="name" required placeholder="Camille Martin"></label>
-        <label class="vp-field"><span>E-mail</span><input name="email" type="email" autocomplete="email" required placeholder="camille@entreprise.fr"></label></div>
-        <fieldset class="vp-chips"><legend>Votre projet</legend><label><input type="radio" name="type" value="Site vitrine"><span>Site vitrine</span></label><label><input type="radio" name="type" value="Landing page"><span>Landing page</span></label><label><input type="radio" name="type" value="Application web"><span>Application web</span></label><label><input type="radio" name="type" value="SaaS / MVP"><span>SaaS / MVP</span></label><label><input type="radio" name="type" value="Refonte &amp; migration"><span>Refonte & migration</span></label><label><input type="radio" name="type" value="Autre"><span>Autre</span></label></fieldset>
-        <label class="vp-field"><span>Votre message</span><textarea name="message" rows="4" required placeholder="Votre idée en quelques mots…"></textarea></label>
-        <input class="vp-hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <p class="legal-note">Ces informations servent à répondre à votre message. Elles nous parviennent par e-mail via FormSubmit. Nous les conservons 3 ans après notre dernier échange. <a href="/confidentialite/" target="_blank" rel="noopener">Vos droits et le détail</a>.</p>
-        <div class="vp-form-foot"><button class="vp-btn vp-btn--solid" type="submit">Envoyer <svg class="ic-arrow-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="vp-form-note" aria-live="polite"></p></div>
-      </form></div>
-    <aside class="vp-coord glass" aria-label="Coordonnées"><p class="s-eyebrow">Coordonnées</p>
-      <dl><dt>Téléphone</dt><dd><a href="tel:+33650094348">06 50 09 43 48</a></dd><dt>E-mail</dt><dd><a href="mailto:visora.webstudio@gmail.com">visora.webstudio@gmail.com</a></dd><dt>Adresse</dt><dd>1 rue Winston Churchill, 59100 Roubaix, France</dd><dt>Disponibilité</dt><dd>Du lundi au vendredi, hors jours fériés</dd><dt>Délai de réponse</dt><dd>Sous 24 h ouvrées</dd></dl>
-      <p class="s-eyebrow" style="margin-bottom:8px">Besoin d’autre chose ?</p>
-      <ul><li><a href="/resilier/">Résilier votre contrat</a></li><li><a href="/remboursement/">Demander un remboursement</a></li><li><a href="/confidentialite/">Exercer vos droits sur vos données</a></li></ul></aside>
-  </div></section><nav class="vp-next wrap" aria-label="Page suivante"><a href="/offres/"><div><span>Page suivante · (02)</span><b>Nos offres</b></div><svg class="ic-arrow-r" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></nav>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="top"><div class="vp-start"><button class="vm-burger" type="button" aria-expanded="false" aria-controls="vm-panel" aria-label="Ouvrir le menu"><span class="vm-lines" aria-hidden="true"><i></i><i></i><i></i></span><span class="vm-label" aria-hidden="true"><span>Menu</span><span>Fermer</span></span></button><a class="brand" href="/" aria-label="Visora, accueil">VISORA</a></div><a class="back" href="/">← Retour au site</a></header>
+<div class="shell">
+<nav class="side" aria-label="Informations"><a href="/a-propos/">À propos</a><a href="/cgv/">Conditions de vente</a><a href="/remboursement/">Annulation et remboursement</a><a href="/livraison/">Délais et livraison</a><a href="/resilier/">Résilier votre contrat</a><hr><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a><a href="/cookies/">Cookies</a><a href="/accessibilite/">Accessibilité</a><a href="/contact/" aria-current="page">Contact</a></nav>
+<main id="contenu" tabindex="-1">
+<p class="kick">Informations</p>
+<h1>Nous contacter</h1>
+<p class="upd">Mise à jour le 25 novembre 2026</p>
+<p class="lead">Une question sur une offre, un contrat ou vos données ? Écrivez-nous ou appelez-nous.</p>
+
+<dl><dt>Téléphone</dt><dd><a href="tel:+33650094348">06 50 09 43 48</a></dd><dt>E-mail</dt><dd><a href="mailto:visora.webstudio@gmail.com">visora.webstudio@gmail.com</a></dd><dt>Adresse</dt><dd>1 rue Winston Churchill, 59100 Roubaix, France</dd><dt>Disponibilité</dt><dd>Du lundi au vendredi, hors jours fériés</dd><dt>Délai de réponse</dt><dd>Sous 24 h ouvrées</dd></dl>
+<p><a class="act" href="/#contact">Réserver un appel ou demander un devis</a></p>
+
+<h2>Besoin d’autre chose ?</h2>
+<ul><li><a href="/resilier/">Résilier votre contrat</a></li><li><a href="/remboursement/">Demander un remboursement</a></li><li><a href="/confidentialite/">Exercer vos droits sur vos données</a></li></ul>
 </main>
-<footer class="s-footer"><div class="wrap">
-  <div class="s-foot-grid">
-    <div><p class="s-eyebrow">Offres</p><a href="/offres/site-vitrine/">Site vitrine</a><a href="/offres/landing-page/">Landing page</a><a href="/offres/application-web/">Application web</a><a href="/offres/saas-mvp/">SaaS / MVP</a><a href="/offres/refonte-migration/">Refonte & migration</a><a href="/tarifs/">Tarifs</a></div>
-    <div><p class="s-eyebrow">Contact</p><a href="mailto:visora.webstudio@gmail.com">visora.webstudio@gmail.com</a><a href="tel:+33650094348">06 50 09 43 48</a><a href="/rendez-vous/" data-vm-act="rdv">Réserver un appel</a><a href="/devis/" data-vm-act="devis">Demander un devis</a><a href="/contact/">Nous écrire</a></div>
-    <div><p class="s-eyebrow">Pages</p><a href="/offres/">Nos offres</a><a href="/tarifs/">Tarifs</a><a href="/fonctionnement/">Fonctionnement</a><a href="/inclus/">Inclus partout</a><a href="/questions/">Questions</a><a href="/contact/">Contact</a></div>
-    <div><p class="s-eyebrow">Informations</p><a href="/a-propos/">À propos</a><a href="/cgv/">Conditions de vente</a><a href="/remboursement/">Annulation et remboursement</a><a href="/livraison/">Délais et livraison</a><a href="/resilier/">Résilier votre contrat</a></div>
-  </div>
-  <div class="s-foot-logo"><a class="vp-logo" href="/" aria-label="Visora, accueil" style="display:block"><span class="vp-logo-mark" aria-hidden="true" style="width:100%;height:auto;aspect-ratio:1275/224.3"></span></a></div>
-  <div class="s-foot-legal"><span>© 2026 Visora — Tous droits réservés</span><span><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/cookies/">Cookies</a> · <a href="/accessibilite/">Accessibilité</a> · <a href="/contact/">Contact</a></span></div>
-</div></footer>
+</div>
+<footer class="foot">
+<nav aria-label="Pied de page"><a href="/a-propos/">À propos</a><a href="/cgv/">Conditions de vente</a><a href="/remboursement/">Annulation et remboursement</a><a href="/livraison/">Délais et livraison</a><a href="/resilier/">Résilier votre contrat</a><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a><a href="/cookies/">Cookies</a><a href="/accessibilite/">Accessibilité</a><a href="/contact/">Contact</a></nav>
+<span>© 2026 Visora · 06 50 09 43 48 · visora.webstudio@gmail.com</span>
+</footer>
+<script>document.querySelector('.back').addEventListener('click',function(e){try{var r=new URL(document.referrer);if(history.length>1&&r.origin===location.origin&&r.pathname==='/'){e.preventDefault();history.back()}}catch(x){}});</script>
+<script type="application/json" id="vm-data">{"tel":"+33650094348","links":[{"key":"home","href":"/#site","n":"01","label":"Accueil","sub":"L’expérience Visora"},{"key":"offres","href":"/#offres","n":"02","label":"Nos offres","sub":"5 offres · dès 100&nbsp;€"},{"key":"tarifs","href":"/#tarifs","n":"03","label":"Tarifs","sub":"Dès 49,99&nbsp;€ par mois"},{"key":"fonctionnement","href":"/#fonctionnement","n":"04","label":"Fonctionnement","sub":"Deux temps, zéro surprise"},{"key":"inclus","href":"/#inclus","n":"05","label":"Inclus partout","sub":"Sans supplément"},{"key":"questions","href":"/#faq","n":"06","label":"Questions","sub":"9 réponses claires"},{"key":"contact","href":"/#contact","n":"07","label":"Contact","sub":"Réponse sous 24&nbsp;h ouvrées"}],"actions":[{"k":"rdv","href":"/#rdv","icon":"\u003csvg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\u003crect x=\"3.5\" y=\"5\" width=\"17\" height=\"15.5\" rx=\"2.5\"/>\u003cpath d=\"M3.5 10h17M8 3v4M16 3v4\"/>\u003c/svg>","label":"Réserver un appel","sub":"30 min · en visio · gratuit"},{"k":"devis","href":"/#devis","icon":"\u003csvg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\u003cpath d=\"M6 3h8l4 4v14H6z\"/>\u003cpath d=\"M14 3v4h4M9 12h6M9 15.5h6M9 19h3\"/>\u003c/svg>","label":"Demander un devis","sub":"En deux minutes · PDF"},{"k":"ecrire","href":"/#ecrire","icon":"\u003csvg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\u003crect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/>\u003cpath d=\"m4 7 8 6 8-6\"/>\u003c/svg>","label":"Nous écrire","sub":"Réponse sous 24 h ouvrées"},{"k":"appel","href":"tel:+33650094348","icon":"\u003csvg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\u003cpath d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2\"/>\u003c/svg>","label":"Appeler","sub":"06 50 09 43 48"}],"previews":{"home":"\u003cp class=\"vm-k\">L’expérience\u003c/p>\u003cp>La page d’accueil en 3D, où votre futur site se construit sous vos yeux.\u003c/p>\u003cul>\u003cli>\u003ca href=\"/#site\">Revenir à l’accueil \u003cem>3D\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/a-propos/\">À propos de Visora \u003cem>Studio\u003c/em>\u003c/a>\u003c/li>\u003c/ul>","offres":"\u003cp class=\"vm-k\">5 offres\u003c/p>\u003cul>\u003cli>\u003ca href=\"/#offre-vitrine\">Site vitrine\u003cem>Dès 300&nbsp;€\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#offre-landing\">Landing page\u003cem>Dès 200&nbsp;€\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#offre-application\">Application web\u003cem>Dès 1&nbsp;900&nbsp;€\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#offre-saas\">SaaS / MVP\u003cem>Sur devis\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#offre-refonte\">Refonte & migration\u003cem>Dès 100&nbsp;€\u003c/em>\u003c/a>\u003c/li>\u003c/ul>","tarifs":"\u003cp class=\"vm-k\">Formules avec abonnement\u003c/p>\u003cul>\u003cli>\u003ca href=\"/#tarifs\">Essentiel\u003cem>49,99&nbsp;€ / mois\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#tarifs\">Pro\u003cem>79,99&nbsp;€ / mois\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#tarifs\">Sur mesure\u003cem>Sur devis\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#comparatif\">Comparer les formules\u003cem>Tableau\u003c/em>\u003c/a>\u003c/li>\u003c/ul>\u003cp class=\"vm-note\">Facturé chaque mois, sans engagement, préavis d’un mois.\u003c/p>","fonctionnement":"\u003cp class=\"vm-k\">Deux temps\u003c/p>\u003cul>\u003cli>\u003ca href=\"/#fonctionnement\">Découverte\u003cem>I\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#fonctionnement\">Design\u003cem>II\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#fonctionnement\">Développement\u003cem>III\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#fonctionnement\">Lancement\u003cem>IV\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#fonctionnement\">Accompagnement\u003cem>∞\u003c/em>\u003c/a>\u003c/li>\u003c/ul>","inclus":"\u003cp class=\"vm-k\">Dans chaque création\u003c/p>\u003cul>\u003cli>\u003ca href=\"/#inclus\">Design sur mesure\u003cem>Aucun template\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#inclus\">Tous les écrans\u003cem>Mobile, tablette, ordinateur\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#inclus\">Référencement\u003cem>Pensé pour Google\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#inclus\">Performance\u003cem>Des pages légères\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#inclus\">Vous êtes propriétaire\u003cem>Code, contenus et accès\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#inclus\">Prise en main\u003cem>Session incluse\u003c/em>\u003c/a>\u003c/li>\u003c/ul>","questions":"\u003cp class=\"vm-k\">On nous demande souvent\u003c/p>\u003cul>\u003cli>\u003ca href=\"/#faq-1\">Pourquoi des prix « à partir de » ?\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#faq-2\">Comment recevoir un devis ?\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#faq-3\">Combien de temps faut-il ?\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#faq-4\">Le site m’appartient-il ?\u003c/a>\u003c/li>\u003cli>\u003ca href=\"/#faq\">Toutes les questions\u003cem>9\u003c/em>\u003c/a>\u003c/li>\u003c/ul>","contact":"\u003cp class=\"vm-k\">Coordonnées\u003c/p>\u003cul>\u003cli>\u003ca href=\"tel:+33650094348\">Téléphone\u003cem>06 50 09 43 48\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003ca href=\"mailto:visora.webstudio@gmail.com\">E-mail\u003cem>visora.webstudio@gmail.com\u003c/em>\u003c/a>\u003c/li>\u003cli>\u003cspan>Disponibilité\u003cem>du lundi au vendredi, hors jours fériés\u003c/em>\u003c/span>\u003c/li>\u003c/ul>"},"legal":[["/mentions-legales/","Mentions légales"],["/confidentialite/","Confidentialité"],["/cgv/","Conditions de vente"]],"dots":["#070707","#e2382c","#c9a58a"]}</script>
 </body>
 </html>
